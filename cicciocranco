@@ -1,0 +1,7 @@
+import("stdfaust.lib");
+ciccio = 2;
+cranco = 6000;
+process = no.noise : fi.lowpass (ciccio,cranco) : fi.highpass (ciccio,cranco);
+//La sintesi sottrattiva è un tipo sintesi che può essere creata tramite strumenti come dei sintetizzatori.
+//Lo spettroscopio ci mostra il contenuto del suono nel dominio della frequenza, sull'asse delle x le frequenze, sull'asse delle Y le ampiezze, mentre l'oscilloscopio ci mostra il contenuto del suono nel dominio del tempo, sull'asse delle X abbiamo in tempo, sull'asse delle Y abbiamo le ampiezze.
+//il filtro lowpass, o filtro passa basso, è uno dei filtri più seplici, che permette il passaggio solo di frequenze al di sotto di un valore dato, mentre il filtro highpass o filtro passa alto, permette il passaggio di frequenze al di sopra di un dato valore.
